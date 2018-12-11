@@ -1,6 +1,11 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-android'
+// JitPack Maven
+apply plugin: 'com.github.dcendents.android-maven'
+// Your Group
+group='com.github.loubinfeng2013'
+
 
 android {
     compileSdkVersion 28
@@ -26,7 +31,4 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-}
-repositories {
-    mavenCentral()
 }
